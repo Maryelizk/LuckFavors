@@ -6,17 +6,25 @@
 <body>
 	<!-- Top photo -->
 	<header>
-		<img src="img/placeholder">
+		<img src="https://imgur.com/a/QfqFZC7">
 	</header>
-
-	<!-- Main element -->
-	<main>
-		<p> Look at you! We'd love to have a smarty pants like you test our puzzles!</p>
-	</main>
-
-	<!-- Footer -->
-	<footer>
-		<img src="img/logo">
-		
+<form>
+    <label for="pswd">What's the code? </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "the clever";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
 </body>
 </html>
