@@ -1,11 +1,10 @@
 body{
 	background-color: lightgrey;
 }
-h1{
-	font-size: 30px;
-			}
-p{
+
+main, form{
 	font-size: 18px;
-	font-family: sans-serif;
-	color: salmon;
+	font-family: Cambria;
+	color: navy;
+	text-align: center;
 }
