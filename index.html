@@ -8,12 +8,12 @@
 <body>
 	<!-- Top photo -->
 	<header>
-		<img src="https://imgur.com/a/QfqFZC7">
+		<img src="img/PigpenKey.jpg">
 	</header>
 <form>
     <label for="pswd">What's the code? </label>
     <input type="password" id="pswd">
-    <input type="button" value="Submit" onclick="checkPswd();" />
+    <input type="submit" value="🔓" onclick="checkPswd();" />
 </form>
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
@@ -21,11 +21,12 @@
         var confirmPassword = "the clever";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
-             window.location="welcome.html";
-             alert("You did it!");
+            alert("Yes!");
+            window.location="unlocked.html";
+           
         }
         else{
-            alert("Passwords do not match.");
+            alert("That's not it");
         }
     }
 </script>
